@@ -1,8 +1,9 @@
-const { addStoreItemsService } = require('./addStoreItems');
-const { getAllStoreItemsService } = require('./getAllStoreItems');
-const { removeStoreItemService } = require('./removeStoreItem');
-const { getSingleStoreService } = require('./getSingleStore');
-const { removeStoresService } = require('./removeStores');
+const { addStoreItemsService } = require("./addStoreItems");
+const { getAllStoreItemsService } = require("./getAllStoreItems");
+const { removeStoreItemService } = require("./removeStoreItem");
+const { getSingleStoreService } = require("./getSingleStore");
+const { removeStoresService } = require("./removeStores");
+const { updateStoreService } = require("./updateStore");
 
 module.exports = {
   addStoreItemsService,
@@ -10,4 +11,5 @@ module.exports = {
   removeStoreItemService,
   getSingleStoreService,
   removeStoresService,
+  updateStoreService,
 };

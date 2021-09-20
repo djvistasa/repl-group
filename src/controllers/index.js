@@ -1,8 +1,9 @@
-const { addStoreItemsController } = require('./addStoreItems');
-const { removeStoreItemController } = require('./removeStoreItem');
-const { getAllStoreItemsController } = require('./getAllStoreItems');
-const { getSingleStoreController } = require('./getSingleStore');
-const { removeStoreController } = require('./removeStores');
+const { addStoreItemsController } = require("./addStoreItems");
+const { removeStoreItemController } = require("./removeStoreItem");
+const { getAllStoreItemsController } = require("./getAllStoreItems");
+const { getSingleStoreController } = require("./getSingleStore");
+const { removeStoreController } = require("./removeStores");
+const { updateStoreController } = require("./updateStore");
 
 module.exports = {
   addStoreItemsController,
@@ -10,4 +11,5 @@ module.exports = {
   getAllStoreItemsController,
   getSingleStoreController,
   removeStoreController,
+  updateStoreController,
 };

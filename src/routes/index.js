@@ -1,4 +1,4 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 const {
   addStoreItemsController,
@@ -6,12 +6,14 @@ const {
   getAllStoreItemsController,
   getSingleStoreController,
   removeStoreController,
-} = require('../controllers');
+  updateStoreController,
+} = require("../controllers");
 
-router.post('/add-store-items', addStoreItemsController);
-router.delete('/remove-store-item', removeStoreItemController);
-router.get('/get-all-stores', getAllStoreItemsController);
-router.get('/get-single-store', getSingleStoreController);
-router.delete('/remove-stores', removeStoreController);
+router.post("/add-store", addStoreItemsController);
+router.post("/update-store", updateStoreController);
+router.delete("/remove-store", removeStoreItemController);
+router.get("/get-all-stores", getAllStoreItemsController);
+router.get("/get-store", getSingleStoreController);
+router.delete("/remove-stores", removeStoreController);
 
 module.exports = router;
